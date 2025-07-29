@@ -19,7 +19,20 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('sbadmin2') }}/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="{{ asset('sbadmin2') }}/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this page -->
+     
+    <style>
+        .bg-custom-gradient {
+            background: linear-gradient(to bottom, #450000, #800000);
+        }
+        .bg-custom-gradient-2 {
+            background: linear-gradient(to bottom, #620000, #800000);
+            color: white
+            ;
+        }
+    </style>
+
 
 </head>
 
@@ -29,7 +42,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-custom-gradient sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -208,7 +221,7 @@
                             <input type="text" class="form-control bg-light border-0 small"
                                 placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn bg-custom-gradient-2" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -255,13 +268,13 @@
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
+                                <h6 class="dropdown-header bg-custom-gradient-2">
                                     Pendaftaran Baru
                                 </h6>
                                 @forelse (\App\Models\Administrasi::where('status', 'baru')->get() as $item)
                                     <a class="dropdown-item d-flex align-items-center" href="#">
                                         <div class="mr-3">
-                                            <div class="icon-circle bg-primary">
+                                            <div class="icon-circle bg-custom-gradient-2">
                                                 <i class="fas fa-file-alt text-white"></i>
                                             </div>
                                         </div>
@@ -337,7 +350,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; PetMedic</span>
                     </div>
                 </div>
             </footer>

@@ -37,12 +37,17 @@ class PasienController extends Controller
      */
     public function store(Request $request)
     {
-        $validasiData = $request->validate([
+        $request->validate([
             'nama_pasien' => 'required',
-            'jenis_kelamin' => 'required',
-            'status' => 'required',
             'nomor_hp' => 'required',
             'alamat' => 'required',
+
+            // Data hewan
+            'nama_hewan' => 'required',
+            'jenis_hewan' => 'required',
+            'ras' => 'nullable',
+            'jenis_kelamin_hewan' => 'required',
+            'tanggal_lahir_hewan' => 'nullable|date',
         ]);
         $kodeQuery = \App\Models\Pasien::orderBy('id', 'desc')->first();
         $kode = 'P0001';
@@ -51,7 +56,7 @@ class PasienController extends Controller
         }
         $pasien = new \App\Models\Pasien();
         $pasien->kode_pasien = $kode;
-        $pasien->fill($validasiData);
+        $pasien->fill($request->all());
         $pasien->save();
 
         flash('Data berhasil disimpan');
@@ -63,7 +68,9 @@ class PasienController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $data['judul'] = 'Detail Pasien';
+        $data['pasien'] = \App\Models\Pasien::findOrFail($id);
+        return view('pasien_show', $data);
     }
 
     /**
@@ -83,9 +90,15 @@ class PasienController extends Controller
     {
         $validasiData = $request->validate([
             'nama_pasien' => 'required',
-            'jenis_kelamin' => 'required',
-            'status' => 'required',
             'nomor_hp' => 'required',
+            'alamat' => 'required',
+
+            // Data hewan
+            'nama_hewan' => 'required',
+            'jenis_hewan' => 'required',
+            'ras' => 'nullable',
+            'jenis_kelamin_hewan' => 'required',
+            'tanggal_lahir_hewan' => 'nullable|date',
         ]);
         $pasien = \App\Models\Pasien::findOrFail($id);
         $pasien->fill($validasiData);

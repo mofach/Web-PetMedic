@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">Nama Dokter: {{ strtoupper($dokter->nama_dokter) }}</div>
+        <div class="card-header bg-custom-gradient-2">Data-Data Dokter: {{ strtoupper($dokter->nama_dokter) }}</div>
         <div class="card-body">
             <h5>Data Dokter : {{ strtoupper($dokter->nama_dokter) }}</h5>
             <div class="row">

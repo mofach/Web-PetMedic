@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data['jumlahPasien'] = \App\Models\Pasien::count();
+        $data['jumlahDokter'] = \App\Models\Dokter::count();
+        $data['jumlahDepartemen'] = \App\Models\Poli::count(); // atau model departemen spesialis kamu
+
+        return view('home', $data);
     }
+
 }

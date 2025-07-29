@@ -9,12 +9,18 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Pasien extends Model
 {
     use HasFactory;
-    protected $guarded = [];
-    /**
-     * Get all of the comments for the Pasien
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
+    protected $fillable = [
+        'kode_pasien',
+        'nama_pasien',
+        'nomor_hp',
+        'alamat',
+        'nama_hewan',
+        'jenis_hewan',
+        'ras',
+        'jenis_kelamin_hewan',
+        'tanggal_lahir_hewan'
+    ];
+
     public function administrasi(): HasMany
     {
         return $this->hasMany(Administrasi::class);

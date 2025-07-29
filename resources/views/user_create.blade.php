@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">Buat User</div>
+        <div class="card-header bg-custom-gradient-2">Buat User</div>
         <div class="card-body">
             <form action="/user" method="POST">
                 @method('POST')
@@ -34,7 +34,8 @@
                 </div>
 
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">SIMPAN</button>
+                    <button type="submit" class="btn bg-custom-gradient-2">SIMPAN</button>
+                    <a href="/user" class="btn btn-secondary">Kembali</a>
                 </div>
             </form>
         </div>

@@ -11,7 +11,7 @@
         }
     </style>
     <div class="card">
-        <div class="card-header">
+        <div class="card-header bg-custom-gradient-2">
             LAPORAN DATA ADMINISTRASI
         </div>
         <div class="card-body">
@@ -28,7 +28,7 @@
                             value="{{ now()->format('Y-m-d') }}">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Generate Laporan</button>
+                <button type="submit" class="btn bg-custom-gradient-2">Generate Laporan</button>
             </form>
         </div>
     </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Medilab </title>
+    <title>PetMedic - Animal Clinic </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -43,7 +43,7 @@
 <body>
 
     <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
+    {{-- <div id="topbar" class="d-flex align-items-center fixed-top">
         <div class="container d-flex justify-content-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
@@ -56,21 +56,20 @@
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html">Medilab</a></h1>
+            <h1 class="logo me-auto"><a href="index.html">PetMedic</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="/medilab/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Layanan Poli</a></li>
                     <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
                     <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
                     <li><a class="nav-link scrollto" href="/login">Login Admin</a></li>
@@ -87,8 +86,8 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
-            <h1>Welcome to Medilab</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
+            <h1>Welcome to PetMedic</h1>
+            <h2>Memberikan perawatan terbaik untuk hewan peliharaan Anda setiap hari</h2>
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
         </div>
     </section><!-- End Hero -->
@@ -102,12 +101,12 @@
                 <div class="row">
                     <div class="col-lg-4 d-flex align-items-stretch">
                         <div class="content">
-                            <h3>Why Choose Medilab?</h3>
+                            <h3>Why Choose PetMedic?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
-                                optio ad corporis.
+                                Di PetMedic, kesehatan dan kenyamanan hewan kesayangan Anda adalah prioritas kami. 
+                                Dengan tenaga medis profesional, peralatan modern, dan layanan penuh kasih, kami siap 
+                                memberikan perawatan terbaik. Percayakan teman berbulu Anda kepada kami — karena mereka 
+                                pantas mendapatkan yang terbaik.
                             </p>
                             <div class="text-center">
                                 <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -119,26 +118,26 @@
                             <div class="row">
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
-                                        <i class="bx bx-receipt"></i>
-                                        <h4>Corporis voluptates sit</h4>
-                                        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
-                                            aliquip</p>
+                                        <i class="bx bx-health"></i>
+                                        <h4>Pemeriksaan Rutin Berkualitas</h4>
+                                        <p>Kami menyediakan layanan check-up menyeluruh untuk memastikan hewan 
+                                            peliharaan Anda selalu dalam kondisi sehat dan bahagia.</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
-                                        <i class="bx bx-cube-alt"></i>
-                                        <h4>Ullamco laboris ladore pan</h4>
-                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                            deserunt</p>
+                                        <i class="bx bx-user"></i>
+                                        <h4>Dokter Berpengalaman & Ramah</h4>
+                                        <p>Tim dokter kami ahli di bidangnya dan peduli terhadap kesejahteraan 
+                                            setiap pasien — siap memberi edukasi dan solusi terbaik.</p>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
-                                        <i class="bx bx-images"></i>
-                                        <h4>Labore consequatur</h4>
-                                        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis
-                                            facere</p>
+                                        <i class="bx bx-clinic"></i>
+                                        <h4>Fasilitas Modern & Lengkap</h4>
+                                        <p>Klinik kami dilengkapi teknologi terbaru untuk mendukung diagnosis 
+                                            cepat dan akurat, demi kenyamanan Anda dan hewan peliharaan.</p>
                                     </div>
                                 </div>
                             </div>
@@ -153,45 +152,34 @@
         <section id="counts" class="counts">
             <div class="container">
 
-                <div class="row">
+                <div class="row justify-content-center">
 
-                    <div class="col-lg-3 col-md-6">
-                        <div class="count-box">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <div class="count-box text-center">
                             <i class="fas fa-user-md"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Doctors</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                        <div class="count-box">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <div class="count-box text-center">
                             <i class="far fa-hospital"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Departments</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
+                    <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                        <div class="count-box text-center">
                             <i class="fas fa-flask"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Research Labs</p>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-                        <div class="count-box">
-                            <i class="fas fa-award"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p>Awards</p>
-                        </div>
-                    </div>
-
                 </div>
+
 
             </div>
         </section><!-- End Counts Section -->
@@ -202,9 +190,10 @@
 
                 <div class="section-title">
                     <h2>Layanan Poli</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>PetMedic menyediakan berbagai layanan poli khusus untuk menangani 
+                        kebutuhan kesehatan hewan peliharaan Anda. Mulai dari pemeriksaan 
+                        umum, poli gigi, hingga penanganan penyakit khusus — semua dilakukan 
+                        oleh dokter hewan berpengalaman dengan peralatan medis yang lengkap dan modern.</p>
                 </div>
 
                 <div class="row">
@@ -221,15 +210,93 @@
 
             </div>
         </section><!-- End Services Section -->
+
+    <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Departments</h2>
+          <p>Di PetMedic, kami memiliki berbagai departemen yang dirancang khusus untuk menangani berbagai 
+            kebutuhan medis hewan peliharaan Anda. Dengan tim dokter hewan dan staf medis berpengalaman, 
+            kami berkomitmen memberikan layanan terbaik untuk kesehatan dan kesejahteraan hewan kesayangan Anda.</p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Umum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Bedah</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Dermatologi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Dentistry</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Cardiology</h3>
+                    <p>Departemen Kardiologi bertugas menangani masalah jantung dan peredaran darah pada hewan. Kami melakukan diagnosis menggunakan echocardiogram, EKG, dan tes lanjutan untuk menangani kondisi seperti gagal jantung, murmur jantung, atau hipertensi.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Neurology</h3>
+                    <p>Departemen Neurologi menangani gangguan sistem saraf, baik otak, sumsum tulang belakang, maupun saraf tepi. Gejala seperti kejang, kelumpuhan, atau disorientasi akan ditangani oleh dokter spesialis dengan teknologi MRI dan CT scan untuk diagnosis yang akurat.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hepatology</h3>
+                    <p>Departemen ini fokus pada penyakit hati dan pankreas. Hewan dengan gejala seperti muntah kronis, penyakit kuning, atau perubahan perilaku akan diperiksa secara menyeluruh. Tes darah, USG, dan biopsi dilakukan untuk pengobatan yang tepat.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Pediactrics</h3>
+                    <p>Departemen Pediatri melayani kebutuhan medis anak-anak hewan, mulai dari vaksinasi, pemeriksaan perkembangan, hingga perawatan penyakit khusus anak. Kami memberikan perhatian ekstra untuk anak kucing, anak anjing, dan spesies muda lainnya.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Eye Care</h3>
+                    <p>Departemen ini menangani gangguan penglihatan, infeksi mata, glaukoma, dan kondisi lain yang berhubungan dengan mata. Dengan peralatan oftalmologi lengkap, kami dapat melakukan perawatan dan tindakan bedah mata secara aman dan profesional.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
         <!-- ======= Doctors Section ======= -->
         <section id="doctors" class="doctors">
             <div class="container">
 
                 <div class="section-title">
                     <h2>Doctors</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Tim dokter profesional kami siap memberikan perawatan terbaik untuk hewan kesayangan Anda. 
+                        Dengan keahlian di berbagai bidang dan pengalaman bertahun-tahun, kami berkomitmen menjaga 
+                        kesehatan setiap pasien berbulu Anda.</p>
                 </div>
 
                 <div class="row">
@@ -238,7 +305,7 @@
                             <div class="member d-flex align-items-start">
                                 <div class="pic">
                                     @if ($item->foto == null)
-                                        <img class="img-fluid" src="/medilab/assets/img/doctors/doctors-1.jpg"
+                                        <img class="img-fluid" src="/medilab/assets/img/doctors/doctors-1.png"
                                             alt="">
                                     @else
                                         <img src="{{ Storage::url($item->foto) }}" class="img-fluid" alt="">
@@ -247,7 +314,8 @@
                                 <div class="member-info">
                                     <h4>{{ $item->nama_dokter }}</h4>
                                     <span>Spesialis {{ $item->spesialis }}</span>
-                                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                    <p>Melayani dengan empati dan keahlian, memastikan kenyamanan dan kesehatan 
+                                        setiap pasien berbulu Anda.</p>
                                     <div class="social">
                                         <a href="{{ $item->twitter }}"><i class="ri-twitter-fill"></i></a>
                                         <a href="{{ $item->facebook }}"><i class="ri-facebook-fill"></i></a>
@@ -270,9 +338,9 @@
 
                 <div class="section-title">
                     <h2>REGISTRASI PASIEN</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Silakan lengkapi formulir berikut untuk mendaftarkan hewan peliharaan Anda. 
+                        Tim kami akan segera menghubungi Anda untuk proses selanjutnya dan memastikan 
+                        perawatan terbaik untuk sahabat berbulu Anda.</p>
                 </div>
                 @include('flash::message')
                 @yield('content')
@@ -287,82 +355,69 @@
 
                 <div class="section-title">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Berikut beberapa pertanyaan yang sering diajukan oleh pemilik hewan peliharaan. 
+                        Jika Anda memiliki pertanyaan lain, jangan ragu untuk menghubungi kami!</p>
                 </div>
 
                 <div class="faq-list">
                     <ul>
                         <li data-aos="fade-up">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                                data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i
+                                data-bs-target="#faq-list-1">Bagaimana cara mendaftarkan hewan ke PetMedic? <i
                                     class="bx bx-chevron-down icon-show"></i><i
                                     class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
                                 <p>
-                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-                                    purus non.
+                                    Anda bisa mendaftarkan hewan peliharaan secara online melalui halaman "Registrasi Pasien" 
+                                    atau datang langsung ke klinik kami untuk bantuan lebih lanjut.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim
-                                nunc? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
+                                data-bs-target="#faq-list-2" class="collapsed">Apakah PetMedic melayani vaksinasi rutin? <i class="bx 
+                                bx-chevron-down icon-show"></i><iclass="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
-                                    cursus turpis massa tincidunt dui.
+                                    Ya, kami menyediakan layanan vaksinasi untuk anjing, kucing, dan hewan lainnya sesuai dengan 
+                                    jadwal dan kebutuhan kesehatan mereka.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing
-                                elit? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
+                                data-bs-target="#faq-list-3" class="collapsed"> Apa saja jenis hewan yang bisa ditangani PetMedic? <i 
+                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
-                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
-                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
-                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                     PetMedic melayani berbagai jenis hewan peliharaan seperti anjing, kucing, kelinci, hamster, 
+                                     dan hewan kecil lainnya.
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam
-                                aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
+                                data-bs-target="#faq-list-4" class="collapsed">Apakah saya perlu membuat janji temu terlebih dahulu?<i 
+                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
-                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                                    Kami menyarankan Anda untuk membuat janji terlebih dahulu agar pelayanan lebih cepat dan nyaman, 
+                                    namun kami juga menerima pasien datang langsung (walk-in).
                                 </p>
                             </div>
                         </li>
 
                         <li data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
-                                data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare.
-                                Varius vel pharetra vel turpis nunc eget lorem dolor? <i
-                                    class="bx bx-chevron-down icon-show"></i><i
-                                    class="bx bx-chevron-up icon-close"></i></a>
+                                data-bs-target="#faq-list-5" class="collapsed">Apakah PetMedic menyediakan layanan darurat? <i
+                                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                             <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
-                                    integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
-                                    eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                     Ya, kami memiliki layanan darurat terbatas pada jam tertentu. Silakan hubungi kontak 
+                                     darurat kami sebelum datang agar tim siap menerima pasien Anda.
                                 </p>
                             </div>
                         </li>
@@ -383,15 +438,15 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="/medilab/assets/img/testimonials/testimonials-1.jpg"
+                                    <img src="/medilab/assets/img/testimonials/testimonials-1.png"
                                         class="testimonial-img" alt="">
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
+                                    <h3>Bagus Ramadhan</h3>
+                                    <h4>Penggemar Anjing Ras</h4>
                                     <p>
                                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                        Maecen aliquam, risus at semper.
+                                        Kliniknya bersih dan nyaman, stafnya ramah banget. 
+                                        Anjing saya biasanya takut ke dokter, tapi di sini dia 
+                                        justru anteng. Sangat direkomendasikan!
                                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -401,15 +456,15 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="/medilab/assets/img/testimonials/testimonials-2.jpg"
+                                    <img src="/medilab/assets/img/testimonials/testimonials-2.png"
                                         class="testimonial-img" alt="">
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
+                                    <h3>Rina Oktaviani</h3>
+                                    <h4>Pemilik Kucing Persia</h4>
                                     <p>
                                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
-                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
-                                        irure amet legam anim culpa.
+                                        Pelayanan di PetMedic luar biasa! Dokternya sabar, informatif, 
+                                        dan benar-benar peduli dengan hewan peliharaan saya. Kucing saya 
+                                        kini jauh lebih sehat dan aktif!
                                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -419,15 +474,15 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="/medilab/assets/img/testimonials/testimonials-3.jpg"
+                                    <img src="/medilab/assets/img/testimonials/testimonials-3.png"
                                         class="testimonial-img" alt="">
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
+                                    <h3>Fitri Maulida</h3>
+                                    <h4>Pecinta Kelinci</h4>
                                     <p>
                                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
-                                        sint minim.
+                                        Pertama kali bawa kelinci saya ke PetMedic dan langsung 
+                                        puas dengan pelayanannya. Pemeriksaannya detail dan kasih 
+                                        tips perawatan juga. Terima kasih PetMedic!
                                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -437,15 +492,15 @@
                         <div class="swiper-slide">
                             <div class="testimonial-wrap">
                                 <div class="testimonial-item">
-                                    <img src="/medilab/assets/img/testimonials/testimonials-4.jpg"
+                                    <img src="/medilab/assets/img/testimonials/testimonials-4.png"
                                         class="testimonial-img" alt="">
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
+                                    <h3>Andi Wicaksono</h3>
+                                    <h4>Pet Lover & Blogger</h4>
                                     <p>
                                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
-                                        quem dolore labore illum veniam.
+                                        Saya suka dengan sistem registrasi online-nya, praktis dan cepat. 
+                                        Plus, dokter hewannya ramah dan sangat profesional. Pasti balik 
+                                        lagi ke sini!
                                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -458,12 +513,12 @@
                                     <img src="/medilab/assets/img/testimonials/testimonials-5.jpg"
                                         class="testimonial-img" alt="">
                                     <h3>John Larson</h3>
-                                    <h4>Entrepreneur</h4>
+                                    <h4>Pemilik Klinik Grooming</h4>
                                     <p>
                                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
-                                        noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
-                                        esse veniam culpa fore nisi cillum quid.
+                                        Saya sering referensikan PetMedic ke klien grooming saya. 
+                                        Responnya selalu positif! Mereka bilang hewan peliharaannya 
+                                        dirawat dengan penuh perhatian.
                                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
                                 </div>
@@ -478,7 +533,7 @@
         </section><!-- End Testimonials Section -->
 
         <!-- ======= Gallery Section ======= -->
-        <section id="gallery" class="gallery">
+        {{-- <section id="gallery" class="gallery">
             <div class="container">
 
                 <div class="section-title">
@@ -567,10 +622,10 @@
                 </div>
 
             </div>
-        </section><!-- End Gallery Section -->
+        </section><!-- End Gallery Section --> --}}
 
         <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
+        {{-- <section id="contact" class="contact">
             <div class="container">
 
                 <div class="section-title">
@@ -647,7 +702,7 @@
                 </div>
 
             </div>
-        </section><!-- End Contact Section -->
+        </section><!-- End Contact Section --> --}}
 
     </main><!-- End #main -->
 
@@ -659,13 +714,13 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Medilab</h3>
+                        <h3>PetMedic</h3>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Jalan Sarimanis No.001 <br>
+                            Bandung, 40555<br>
+                            Jawa Barat <br><br>
+                            <strong>Phone:</strong> +62 098 6785 123<br>
+                            <strong>Email:</strong> PetMedic@mail.com<br>
                         </p>
                     </div>
 
@@ -680,7 +735,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    {{-- <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -689,15 +744,15 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
                         </ul>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                    {{-- <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Join Our Newsletter</h4>
                         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
-                    </div>
+                    </div> --}}
 
                 </div>
             </div>
@@ -707,7 +762,7 @@
 
             <div class="me-md-auto text-center text-md-start">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>PetMedic</span></strong>. All Rights Reserved
                 </div>
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->

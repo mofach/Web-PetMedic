@@ -36,8 +36,6 @@ class DokterController extends Controller
             'password' => 'required',
             'nomor_hp' => 'required|numeric|unique:dokters,nomor_hp',
             'foto' => 'nullable|image|mimes:jpg,jpeg,png|max:8048',
-            'twitter' => 'required',
-            'facebook' => 'required',
             'instagram' => 'required',
             'tiktok' => 'required'
 
@@ -71,8 +69,6 @@ class DokterController extends Controller
             $dokter->nama_dokter = $request->nama_dokter;
             $dokter->spesialis = $request->spesialis;
             $dokter->nomor_hp = $request->nomor_hp;
-            $dokter->twitter = $request->twitter;
-            $dokter->facebook = $request->facebook;
             $dokter->instagram = $request->instagram;
             $dokter->tiktok = $request->tiktok;
             $dokter->save();
@@ -103,10 +99,9 @@ class DokterController extends Controller
         $data['dokter'] = \App\Models\Dokter::findOrFail($id);
         $data['list_sp'] = [
             'Umum' => 'Umum',
-            'Gigi' => 'Gigi',
-            'Kandungan' => 'Kandungan',
-            'Anak' => 'Anak',
             'Bedah' => 'Bedah',
+            'Dermatologi' => 'Dermatologi',
+            'Dentistry' => 'Dentistry',
         ];
         return view('dokter_edit', $data);
     }
@@ -120,8 +115,6 @@ class DokterController extends Controller
             'nama_dokter' => 'required',
             'spesialis' => 'required',
             'nomor_hp' => 'required',
-            'twitter' => 'required',
-            'facebook' => 'required',
             'instagram' => 'required',
             'tiktok' => 'required',
             'foto' => 'nullable|image|mimes:jpg,jpeg,png|max:8048'

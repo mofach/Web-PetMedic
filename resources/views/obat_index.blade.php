@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">{{ $judul }}</div>
+        <div class="card-header bg-custom-gradient-2">{{ $judul }}</div>
         <div class="card-body">
-            <a href="/obat/create" class="btn btn-primary mb-2">Tambah Obat</a>
+            <a href="/obat/create" class="btn bg-custom-gradient-2 mb-2">Tambah Obat</a>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -42,15 +42,9 @@
                                     <a href="" class="btn btn-info">
                                         Detail
                                     </a>
-                                    <a href="" class="btn btn-primary">
+                                    <a a href="/obat/{{ $item->kode_obat }}/edit" class="btn btn-primary">
                                         Edit
                                     </a>
-                                    {{-- <form action="/dokter/{{ $item->id }}" method="POST" class="d-inline"
-                                        onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
-                                        @method('DELETE')
-                                        @csrf
-                                        <button type="submit" class="btn btn-danger">Hapus</button>
-                                    </form> --}}
                                 </td>
                             </tr>
                         @endforeach

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RegistrasiPasienController extends Controller
 {
@@ -19,10 +20,6 @@ class RegistrasiPasienController extends Controller
      */
     public function create()
     {
-        $data['list_jk'] = [
-            'Pria' => 'Pria',
-            'Wanita' => 'Wanita'
-        ];
         $data['dokter'] = \App\Models\Dokter::all();
         $data['poli'] = \App\Models\Poli::all();
         return view('registrasipasien_create', $data);
@@ -36,14 +33,20 @@ class RegistrasiPasienController extends Controller
         //validasi inputan
         $validasiData = $request->validate([
             'nama_pasien' => 'required',
-            'jenis_kelamin' => 'required',
-            'status' => 'required',
+            'nomor_hp' => 'required',
             'alamat' => 'required',
+
+            // Data hewan
+            'nama_hewan' => 'required',
+            'jenis_hewan' => 'required',
+            'ras' => 'nullable',
+            'jenis_kelamin_hewan' => 'required',
+            'tanggal_lahir_hewan' => 'nullable|date',
             'keluhan' => 'required',
             'tanggal' => 'required',
             'poli_id' => 'required|exists:polis,id',
         ]);
-        \DB::beginTransaction();
+        DB::beginTransaction();
         //cek kode pasien terakhir
         $kodeQuery = \App\Models\Pasien::orderBy('id', 'desc')->first();
         $kode = 'P0001';
@@ -53,11 +56,7 @@ class RegistrasiPasienController extends Controller
         //simpan pasien
         $pasien = new \App\Models\Pasien();
         $pasien->kode_pasien = $kode;
-        $pasien->nama_pasien = $request->nama_pasien;
-        $pasien->jenis_kelamin = $request->jenis_kelamin;
-        $pasien->status = $request->status;
-        $pasien->alamat = $request->alamat;
-        $pasien->nomor_hp = $request->nomor_hp;
+        $pasien->fill($request->all());
         $pasien->save();
         //cek kode adm terakhir
         $kodeAdm = \App\Models\Administrasi::orderBy('id', 'desc')->first();
@@ -76,7 +75,7 @@ class RegistrasiPasienController extends Controller
         $adm->dokter_id = $poli->dokter_id;
         $adm->biaya = $poli->biaya;
         $adm->save();
-        \DB::commit();
+        DB::commit();
         flash('Registrasi Berhasil, Silahkan datang pada tanggal ' . $request->tanggal . ' untuk melakukan pemeriksaan');
         return back();
     }

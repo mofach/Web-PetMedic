@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">TAMBAH OBAT</div>
+        <div class="card-header bg-custom-gradient-2">TAMBAH OBAT</div>
         <div class="card-body">
             <form action="/obat" method="POST" enctype="multipart/form-data">
                 @method('POST')
@@ -73,7 +73,7 @@
                             <span class="text-danger">{{ $errors->first('tanggal_expired') }}</span>
                         </div>
                         <div class="form-group mt-2">
-                            <button type="submit" class="btn btn-primary">SIMPAN</button>
+                            <button type="submit" class="btn bg-custom-gradient-2">SIMPAN</button>
                         </div>
                     </div>
                 </div>

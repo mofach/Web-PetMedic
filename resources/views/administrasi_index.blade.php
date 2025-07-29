@@ -10,12 +10,12 @@
         }
     </style>
     <div class="card">
-        <div class="card-header">
+        <div class="card-header bg-custom-gradient-2">
             {{ $judul }}
         </div>
         <div class="card-body">
             @if (auth()->user()->role != 'dokter')
-                <a href="{{ route('administrasi.create') }}" class="btn btn-primary mb-3">Tambah Data</a>
+                <a href="{{ route('administrasi.create') }}" class="btn bg-custom-gradient-2 mb-3">Tambah Data</a>
             @endif
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

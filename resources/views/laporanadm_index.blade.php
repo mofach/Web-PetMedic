@@ -11,8 +11,8 @@
 <body style="background: white;">
     <div class="container-fluid">
         <div class="col-md-12">
-            <h3 class="text-center">LAPORAN ADMINISTRASI</h3>
-            <div class="text-center">Tanggal Laporan : {{ request('tanggal_awal') }} -
+            <h3 class="text-center mt-5 mb-3"><strong>LAPORAN ADMINISTRASI</strong></h3>
+            <div class="text-center mb-5">Tanggal Laporan : {{ request('tanggal_awal') }} -
                 {{ request('tanggal_akhir') }}</div>
             <div class="table-responsive">
                 <table class="table table-bordered" width="100%" cellspacing="0">

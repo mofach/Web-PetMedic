@@ -2,14 +2,15 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">{{ $judul }}</div>
+        <div class="card-header bg-custom-gradient-2">{{ $judul }}</div>
         <div class="card-body">
             <form action="/pasien/{{ $pasien->id }}" method="POST">
                 @method('PUT')
                 @csrf
+                <h5 class="mb-3">Data Pemilik</h5>
                 <div class="row mb-3">
                     <div class="col-md-6 form-group ">
-                        <label for="nama_pasien">Nama Pasien</label>
+                        <label for="nama_pasien">Nama Pemilik</label>
                         <input type="text" name="nama_pasien" class="form-control"
                             value="{{ old('nama_pasien') ?? $pasien->nama_pasien }}" autofocus />
                         <span class="text-danger">{{ $errors->first('nama_pasien') }}</span>
@@ -21,50 +22,39 @@
                         <span class="text-danger">{{ $errors->first('nomor_hp') }}</span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="jj">Jenis Kelamin</label>
-                        <div class="form-check ml-3">
-                            <input type="radio" name="jenis_kelamin" value="Laki-laki" class="form-check-input"
-                                id="lk" {{ $pasien->jenis_kelamin == 'Laki-laki' ? 'checked' : '' }}>
-                            <label class="form-check-label" for="lk">
-                                Laki-laki
-                            </label>
-                        </div>
-                        <div class="form-check ml-3">
-                            <input type="radio" name="jenis_kelamin" value="Perempuan" class="form-check-input"
-                                id="pr" {{ $pasien->jenis_kelamin == 'Perempuan' ? 'checked' : '' }}>
-                            <label class="form-check-label" for="pr">
-                                Perempuan
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="ss">Status Menikah</label>
-                        <div class="form-check ml-3">
-                            <input type="radio" name="status" value="Sudah Menikah" class="form-check-input"
-                                id="sm" {{ $pasien->status == 'Sudah Menikah' ? 'checked' : '' }}>
-                            <label class="form-check-label" for="sm">
-                                Sudah Menikah
-                            </label>
-                        </div>
-                        <div class="form-check ml-3">
-                            <input type="radio" name="status" value="Belum Menikah" class="form-check-input"
-                                id="bm" {{ $pasien->status == 'Belum Menikah' ? 'checked' : '' }}>
-                            <label class="form-check-label" for="bm">
-                                Belum Menikah
-                            </label>
-                        </div>
-                    </div>
-                </div>
                 <div class="form-group mt-3">
                     <label for="alamat">Alamat</label>
                     <textarea name="alamat" rows="3" class="form-control">{{ old('alamat') ?? $pasien->alamat }}</textarea>
                     <span class="text-danger">{{ $errors->first('alamat') }}</span>
                 </div>
 
+                <h5>Data Hewan</h5>
+                <div class="form-group">
+                    <label>Nama Hewan</label>
+                    <input type="text" name="nama_hewan" class="form-control" value="{{ old('nama_hewan', $pasien->nama_hewan) }}">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Hewan</label>
+                    <input type="text" name="jenis_hewan" class="form-control" value="{{ old('jenis_hewan', $pasien->jenis_hewan) }}">
+                </div>
+                <div class="form-group">
+                    <label>Ras</label>
+                    <input type="text" name="ras" class="form-control" value="{{ old('ras', $pasien->ras) }}">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin Hewan</label>
+                    <select name="jenis_kelamin_hewan" class="form-control">
+                        <option value="Jantan" {{ old('jenis_kelamin_hewan', $pasien->jenis_kelamin_hewan) == 'Jantan' ? 'selected' : '' }}>Jantan</option>
+                        <option value="Betina" {{ old('jenis_kelamin_hewan', $pasien->jenis_kelamin_hewan) == 'Betina' ? 'selected' : '' }}>Betina</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Lahir Hewan</label>
+                    <input type="date" name="tanggal_lahir_hewan" class="form-control" value="{{ old('tanggal_lahir_hewan', $pasien->tanggal_lahir_hewan) }}">
+                </div>
+
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn bg-custom-gradient-2">Update</button>
                     <a href="/pasien" class="btn btn-dark">Kembali</a>
                 </div>
             </form>

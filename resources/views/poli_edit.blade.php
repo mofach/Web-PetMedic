@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">{{ $judul }}</div>
+        <div class="card-header bg-custom-gradient-2">{{ $judul }}</div>
         <div class="card-body">
             <form action="/poli/{{ $poli->id }}" method="POST">
                 @method('PUT')
@@ -38,7 +38,7 @@
                     <span class="text-danger">{{ $errors->first('dokter_id') }}</span>
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="submit" class="btn bg-custom-gradient-2">Simpan</button>
                     <a href="/poli" class="btn btn-secondary">Kembali</a>
                 </div>
             </form>

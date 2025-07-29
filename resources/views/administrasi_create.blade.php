@@ -1,7 +1,7 @@
 @extends('layouts.sbadmin2')
 @section('content')
     <div class="card">
-        <div class="card-header">
+        <div class="card-header bg-custom-gradient-2">
             Tambah Administrasi
         </div>
         <div class="card-body">
@@ -20,7 +20,7 @@
                         <select name="pasien_id" id="pasien_id" class="form-control">
                             @foreach ($list_pasien as $item)
                                 <option value="{{ $item->id }}" @selected(old('pasien_id') == $item->id)>
-                                    {{ $item->kode_pasien }} - {{ $item->nama_pasien }} - {{ $item->jenis_kelamin }}
+                                    {{ $item->kode_pasien }} - {{ $item->nama_pasien }} - {{ $item->nama_hewan }}
                                 </option>
                             @endforeach
                         </select>
@@ -43,7 +43,7 @@
                     <label for="keluhan">Keluhan</label>
                     <textarea name="keluhan" rows="3" class="form-control"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">SIMPAN</button>
+                <button type="submit" class="btn bg-custom-gradient-2">SIMPAN</button>
         </div>
     </div>
 @endsection

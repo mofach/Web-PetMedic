@@ -1,15 +1,15 @@
 @extends('layouts.sbadmin2')
 @section('content')
     <div class="card">
-        <div class="card-header"> {{ $judul }} </div>
+        <div class="card-header bg-custom-gradient-2"> {{ $judul }} </div>
         <div class="card-body">
-            <a href="/poli/create" class="btn btn-primary mb-3">Tambah Data</a>
+            <a href="/poli/create" class="btn bg-custom-gradient-2 mb-3">Tambah Data</a>
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
                         <th width="1%">ID</th>
                         <th>Nama Poli</th>
-                        <th width="15%">Biaya</th>
+                        <th width="18%">Biaya</th>
                         <th width="16%">Aksi</th>
                     </tr>
                 </thead>

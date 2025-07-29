@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #1977cc;
+  color: #450000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3291e6;
+  color: #620000;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #1977cc;
+  border: 6px solid #450000;
   border-top-color: #d1e6f9;
   border-radius: 50%;
   width: 60px;
@@ -80,7 +80,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1977cc;
+  background: #450000;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -94,7 +94,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #298ce5;
+  background: #9b0707;
   color: #fff;
 }
 
@@ -110,7 +110,7 @@ h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-#topbar {
+/* #topbar {
   background: #fff;
   height: 40px;
   font-size: 14px;
@@ -129,11 +129,11 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: #1977cc;
+  color: #450000;
 }
 
 #topbar .contact-info i {
-  color: #1977cc;
+  color: #450000;
   padding-right: 4px;
   margin-left: 15px;
   line-height: 0;
@@ -152,12 +152,12 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #1977cc;
+  color: #450000;
 }
 
 #topbar .social-links a:first-child {
   border-left: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Header
@@ -167,13 +167,13 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
+  top: 0px;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 
-#header.header-scrolled {
+/* #header.header-scrolled {
   top: 0;
-}
+} */
 
 #header .logo {
   font-size: 30px;
@@ -186,7 +186,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #2c4964;
+  color: #2A0001;
 }
 
 #header .logo img {
@@ -198,7 +198,7 @@ h6 {
 */
 .appointment-btn {
   margin-left: 25px;
-  background: #1977cc;
+  background: #450000;
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -272,8 +272,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #1977cc;
-  border-color: #1977cc;
+  color: #450000;
+  border-color: #450000;
 }
 
 .navbar .dropdown ul {
@@ -311,7 +311,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #1977cc;
+  color: #450000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -415,7 +415,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #1977cc;
+  color: #450000;
 }
 
 .navbar-mobile .getstarted,
@@ -450,7 +450,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #1977cc;
+  color: #450000;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -463,7 +463,7 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bckgr.jpg") top center;
   background-size: cover;
   margin-bottom: -200px;
 }
@@ -474,15 +474,17 @@ h6 {
 
 #hero h1 {
   margin: 0;
+  text-align: center;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: #2c4964;
+  color: #ffffff;
 }
 
 #hero h2 {
-  color: #2c4964;
+  color: #ffffff;
+  text-align: center;
   margin: 10px 0 0 0;
   font-size: 24px;
 }
@@ -499,11 +501,11 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #1977cc;
+  background: #450000;
 }
 
 #hero .btn-get-started:hover {
-  background: #3291e6;
+  background: #620000;
 }
 
 @media (min-width: 1024px) {
@@ -549,7 +551,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f1f7fd;
+  background-color: #fffafa;
 }
 
 .section-title {
@@ -583,7 +585,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #1977cc;
+  background: #450000;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -659,7 +661,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .content {
   padding: 30px;
-  background: #1977cc;
+  background: #620000;
   border-radius: 4px;
   color: #fff;
 }
@@ -688,7 +690,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #1977cc;
+  color: #450000;
   background: #fff;
 }
 
@@ -703,7 +705,7 @@ section {
 
 .why-us .icon-boxes .icon-box i {
   font-size: 40px;
-  color: #1977cc;
+  color: #450000;
   margin-bottom: 30px;
 }
 
@@ -751,13 +753,13 @@ section {
 }
 
 .about .icon-box .icon i {
-  color: #1977cc;
+  color: #450000;
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #450000;
+  border-color: #450000;
 }
 
 .about .icon-box:hover .icon i {
@@ -777,7 +779,7 @@ section {
 }
 
 .about .icon-box .title a:hover {
-  color: #1977cc;
+  color: #450000;
 }
 
 .about .icon-box .description {
@@ -795,7 +797,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+  background: radial-gradient(#450000 50%, rgba(25, 119, 204, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -838,7 +840,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #1977cc;
+  border-left: 15px solid #450000;
   transform: scale(20);
 }
 
@@ -875,16 +877,21 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: #f1f7fd;
+  background: #ffe7e7;
   padding: 70px 0 60px;
 }
 
 .counts .count-box {
-  padding: 30px 30px 25px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal */
+  align-items: center;     /* Horizontal */
+  padding: 30px;
   width: 100%;
+  height: 200px;
   position: relative;
-  text-align: center;
   background: #fff;
+  text-align: center;
 }
 
 .counts .count-box i {
@@ -893,7 +900,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 20px;
-  background: #1977cc;
+  background: #450000;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -922,7 +929,7 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #d5e1ed;
+  border: 1px solid #ebcbcb;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
@@ -931,7 +938,7 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1977cc;
+  background: #450000;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -953,7 +960,7 @@ section {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: #badaf7;
+  background: #e48888;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
@@ -976,8 +983,8 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #450000;
+  border-color: #450000;
 }
 
 .services .icon-box:hover .icon {
@@ -985,11 +992,11 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1977cc;
+  color: #450000;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #3291e6;
+  background: #620000;
 }
 
 .services .icon-box:hover h4 a,
@@ -1069,7 +1076,7 @@ section {
 .appointment .php-email-form input:focus,
 .appointment .php-email-form textarea:focus,
 .appointment .php-email-form select:focus {
-  border-color: #1977cc;
+  border-color: #450000;
 }
 
 .appointment .php-email-form input,
@@ -1082,7 +1089,7 @@ section {
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: #450000;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1117,12 +1124,12 @@ section {
 }
 
 .departments .nav-link:hover {
-  color: #1977cc;
+  color: #450000;
 }
 
 .departments .nav-link.active {
-  color: #1977cc;
-  border-color: #1977cc;
+  color: #450000;
+  border-color: #450000;
 }
 
 .departments .tab-pane.active {
@@ -1152,7 +1159,7 @@ section {
 
   .departments .nav-link.active {
     color: #fff;
-    background: #1977cc;
+    background: #450000;
   }
 }
 
@@ -1244,7 +1251,7 @@ section {
 }
 
 .doctors .member .social a:hover {
-  background: #1977cc;
+  background: #450000;
 }
 
 .doctors .member .social a+a {
@@ -1316,7 +1323,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1977cc;
+  color: #450000;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1410,11 +1417,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1977cc;
+  border: 1px solid #450000;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1977cc;
+  background-color: #450000;
 }
 
 @media (max-width: 767px) {
@@ -1465,7 +1472,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: #450000;
   float: left;
   width: 44px;
   height: 44px;
@@ -1500,7 +1507,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1977cc;
+  background: #450000;
   color: #fff;
 }
 
@@ -1570,7 +1577,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #1977cc;
+  background: #450000;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1598,7 +1605,7 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f1f7fd;
+  background: #fffafa;
 }
 
 #footer .footer-top {
@@ -1671,7 +1678,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #1977cc;
+  color: #450000;
 }
 
 #footer .footer-newsletter {
@@ -1711,7 +1718,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1977cc;
+  background: #450000;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1730,7 +1737,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1977cc;
+  background: #450000;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
