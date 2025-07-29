@@ -1,6 +1,6 @@
 # Aplikasi Klinik
 
-Aplikasi Klinik ini dikembangkan untuk keperluan Materi Perkuliahan Web || di Kampus UNAMA | Universitas Dinamika Bangsa. Aplikasi ini memiliki 3 role:
+Aplikasi Klinik Hewan dikembangkan untuk keperluan Materi Perkuliahan Web2 || di Kampus UTB | Universitas Universitas Teknologi Bandung. Aplikasi ini memiliki 3 role:
 
 1. **admin**
     - Bisa mengakses semua fitur
