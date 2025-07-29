@@ -53,5 +53,3 @@ Auth::routes([
     //menghilangkan fungsi register di halaman login
     'register' => false
 ]);
-
-Route::get('pasien/{id}', [App\Http\Controllers\PasienController::class, 'show'])->name('pasien.show');
